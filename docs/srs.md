@@ -101,6 +101,26 @@ Changes to these assumptions or dependencies may require modifications to system
 
 ### 3.1 Functional Requirements
 
+#### 3.1.1 Function Definition and Parsing
+
+##### FR-FUNC-001
+
+*Single-Variable Polynomial Representation*. The system shall support the representation of scalar-valued polynomial functions of a single real variable and the evaluation of such a function at an arbitrary point in its domain. Additionally, the system shall support the following operations:
+
+- Addition/Subtraction of two polynomials
+- Addition/Subtraction of a polynomial and a scalar value
+- Multiplication of two polynomials
+- Multiplication/Division of a polynomial by a scalar value
+
+##### FR-FUNC-002
+
+*Multivariate Polynomial Representation*. The system shall support the representation of scalar-valued polynomial functions of several real variables and the evaluation of such a function at an arbitrary point in its domain. Additionally, the system shall support the following operations:
+
+- Addition/Subtraction of two polynomials
+- Addition/Subtraction of a polynomial and a scalar value
+- Multiplication of two polynomials
+- Multiplication/Division of a polynomial by a scalar value
+
 ### 3.2 Non-Functional Requirements
 
 #### 3.2.1 Performance
