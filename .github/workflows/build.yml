@@ -12,3 +12,12 @@ jobs:
         run: make all
       - name: Clean project
         run: make clean
+
+  lint:
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Lint project
+        run: make lint
