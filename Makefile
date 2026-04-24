@@ -27,6 +27,10 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
 
+.PHONY: lint
+lint:
+	clang-tidy $(INCLUDES) $(SOURCES) -- $(CXXFLAGS) -Wno-system-headers $(CPPFLAGS)
+
 .PHONY: clean
 clean:
 	rm -rf $(OBJ_DIR) $(BIN)
